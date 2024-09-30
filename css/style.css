@@ -1,0 +1,498 @@
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+
+
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+   
+  }
+
+
+  
+  /* navbar */
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: blue;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: gray;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: black;
+  }
+
+
+  
+
+/* menu burger :  */
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+  
+}
+
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+
+
+/* section 1 */
+
+header{
+    padding: 48px 0;
+}
+
+.container1{
+    background-color:white;
+    min-height: 200px;
+    padding: 0 48px 48px;
+    margin:0 114.5px
+  
+
+}
+
+
+/* Styles par défaut */
+.badge {
+    background: linear-gradient(to bottom, #ff7e5f, #5100ff);
+    padding: 0 0 24px;
+    margin: 4.2px 7.8px;
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.centrer {
+    display: flex;
+    justify-content: space-around;
+}
+
+.title {
+    color: white;
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+
+
+/* titre prenom et nom  */
+
+.pn{
+    font-weight: bolder ;
+    margin-bottom: 3rem ;
+    font-size: 48px;
+    background: linear-gradient(to bottom, #ff7e5f, #5100ff); /* Dégradé du rose vers le violet */
+    background-clip: text; /* Pour les autres navigateurs */
+    color: transparent;
+    font-family: Gotham, Tahoma, sans-serif;
+    animation-duration: 5s; 
+
+    
+}
+
+
+.boutton-div{
+    gap: 1rem;
+    margin-bottom: 1rem ;
+    margin: 0 0 16px;
+    display: flex;
+}
+
+
+
+
+
+
+/* block 2 avec photo  */
+
+.bloc {
+    padding: 0 24px;
+}
+
+.picture {
+
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    
+     
+}
+
+.profile {
+    margin: 21.5px;
+    height: 80vw;
+    max-height: 16rem;
+    display: block; 
+   
+}
+
+
+
+/* Pour les écrans de moins de 767px (mobile) */
+@media (max-width: 767px) {
+    .badge {
+        font-size: 10px;
+        padding: 5px 10px;
+        margin: 2px 5px;
+    }
+    
+    .title {
+        font-size: 14px;
+    }
+    
+    .centrer {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+
+
+    .boutton-div {
+        flex-direction: column; /* Empile les boutons sur mobile */
+        gap: 0.5rem; /* Moins d'espace entre les boutons */
+    }
+
+    .container1{
+
+
+        padding: 0px 16px 38px;
+        margin: 0px 50.5px;
+    }
+
+    button{
+
+        height: 50px;
+    }
+
+
+    .container1, .bloc {
+        margin: 0 16px;
+        padding: 0 16px;
+        min-height: auto;
+    }
+
+    .pn {
+        font-size: 32px;
+        margin-bottom: 2rem;
+        display: flex;
+        justify-content: center;
+    }
+
+
+
+    .boutton-div {
+        flex-direction: column;
+    }
+
+    /* menu burger mobile*/
+
+    .nav-links {
+        position: absolute;
+        top: 60px;
+        right: 0;
+        height: 40vh;
+        width: 100%;
+        background-color: white;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        display: none; /* Masqué par défaut sur mobile */
+      
+    }
+
+    .nav-links.active {
+        display: flex; /* Affiche le menu quand actif */
+    }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .burger {
+        display: flex; /* Affiche le menu burger sur mobile */
+    }
+
+    .profile{
+
+        height: 80vw;
+    }
+}
+
+/* Pour les écrans entre 768px et 1024px (tablettes) */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .badge {
+        font-size: 14px;
+        padding: 8px 15px;
+        margin: 5px 10px;
+    }
+    
+    .title {
+        font-size: 14px;
+    }
+    
+    .centrer {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .pn {
+        font-size: 36px; /* Taille de police intermédiaire */
+        margin-bottom: 2.5rem;
+    }
+
+   
+
+    .container1, .bloc {
+        margin: 0 32px;
+        padding: 0 32px;
+        min-height: auto;
+    }
+
+    .pn {
+        font-size: 40px;
+        margin-bottom: 2.5rem;
+    }
+
+    .profile {
+        height: 70vw;
+        max-height: 14rem;
+    }
+
+    .boutton-div {
+        gap: 1.5rem;
+        display: flex;
+        justify-content: center;
+    }
+
+    .container1 {
+        display: flex;
+        flex-direction: column; /* Empile les blocs */
+        width: 100%; /* Prend toute la largeur */
+    }
+
+    .bloc1, .bloc {
+        width: 100%; /* Assure que chaque bloc prend toute la largeur */
+        margin: 0; /* Supprime les marges */
+        padding: 0 32px; /* Ajuste le remplissage si nécessaire */
+    }
+}
+
+/* Pour les écrans de plus de 1024px (ordinateurs et au-delà) */
+@media (min-width: 1024px) {
+
+    .badge {
+        font-size: 16px;
+        padding: 10px 20px;
+        margin: 10px 15px 10px 0;
+    }
+    
+    .title {
+        font-size: 16px;
+    }
+    
+    .centrer {
+        justify-content: flex-start;
+    }
+
+    .pn {
+        font-size: 48px; 
+        margin-bottom: 3rem;
+    
+    }
+
+    .boutton-div {
+        gap: 1rem; 
+        flex-direction: row; 
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .container1, .bloc {
+        display: inline-block;
+        width: 50%; 
+        vertical-align: top;
+        padding: 0 48px;
+        margin: 0; 
+    }
+
+
+    .profile {
+        height: 35vw;
+        max-height: none;
+        
+        
+    }
+
+    .container1 {
+        display: flex; 
+        flex-direction: row; 
+        justify-content: space-between; 
+        width: 100%; 
+    }
+
+    .bloc1, .bloc {
+        width: 48%; 
+        margin: 0; 
+        padding: 0 48px; 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+
+    /* animation */
+
+    .pn {
+        animation-duration: 5s;
+        animation-name: glissement;
+        animation-iteration-count:initial;
+      }
+      @keyframes glissement {
+
+        from {
+          margin-left: 100%;
+          width: 300%;
+        }
+      
+        to {
+          margin-left: 0%;
+          width: 100%;
+        }
+      }
+}
+
+
+/* mobile */
+
+
+/* section2 */
+
+.section2{
+
+    background-color: #d8d9dc;
+    min-height: 300px;
+    padding: 48px 0;
+
+}
+
+.container2{
+
+    padding: 0 48px;
+    margin: 0 90px;
+    
+
+}
+
+
+.about-me {
+    text-align: center;
+    padding: 0 24px;
+    
+  }
+  
+  h1 {
+    font-size: 48px;
+    background: linear-gradient(to bottom, #ff7e5f, #5100ff); /* Dégradé du rose vers le violet */
+    -webkit-background-clip: text; /* Pour Chrome, Safari */
+    background-clip: text; /* Pour les autres navigateurs */
+    color: transparent;
+    text-align: center;
+    font-family: Gotham, Tahoma, sans-serif;
+    margin: 0;
+  }
+  
+  .intro {
+    font-size: 24px;
+    color: #343a40;
+    margin: 10px 0;
+    text-align: center;
+  }
+  
+  .description {
+    font-size: 18px;
+    color: #6c757d;
+    max-width: 600px;
+    margin: 20px auto;
+    line-height: 1.6;
+  }
+  
+  .social-icons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .social-icons a {
+    margin: 0 15px;
+    transition: transform 0.3s;
+  }
+  
+  .social-icons a:hover {
+    transform: scale(1.2);
+  }
+  
+  .social-icons img {
+    width: 40px;
+    height: 40px;
+  }
+
+/* footer  */
+
+footer{
+
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+.logo{
+
+    filter: brightness(0) saturate(100%)
+    invert(21%) sepia(78%) saturate(6100%) 
+    hue-rotate(267deg) brightness(105%) contrast(101%);
+}
+
+

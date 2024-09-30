@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #f5f5f7;
+}
+
+/* navbar */
+  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #f5f5f7;
+  }
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: blue;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    text-decoration: none;
+    color: gray;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  
+  .nav-links a:hover {
+    color: black;
+  }
+
+
+  
+
+/* menu burger :  */
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 20px;
+  
+}
+
+
+.burger span {
+    width: 25px;
+    height: 3px;
+    background-color: black;
+    border-radius: 2px;
+}
+
+
+
+.resume-section {
+    padding: 50px 0;
+}
+
+.container1 {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff7e5f, #5100ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.download-button {
+    background-color: #3d5afe;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.download-button:hover {
+    background-color: #304ffe;
+}
+
+.experience-title {
+    font-size: 32px;
+    margin: 40px 0;
+    color: #3d5afe;
+}
+
+.experience-card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.experience-info {
+    background-color: #f1f3f4;
+    border-radius: 12px;
+    padding: 20px;
+    max-width: 300px;
+}
+
+.experience-info h3 {
+    color: #3d5afe;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.experience-info h4 {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.experience-info p {
+    font-size: 14px;
+    color: #888;
+}
+
+.experience-description {
+    max-width: 800px;
+    padding-left: 20px;
+}
+
+.experience-description p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .experience-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .experience-info {
+        max-width: none;
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .experience-description {
+        padding-left: 0;
+    }
+
+    .download-button {
+        margin-top: 20px;
+    }
+}
+
+
+
+.experience-ancien{
+   display: flex;
+   justify-content: space-around;
+   margin-bottom: 70px;
+}
+
+
+.skills-section {
+    width: 100%;
+    padding: 40px 0;
+}
+
+.container2 {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.skills-card {
+    background-color: white;
+    border-radius: 16px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+}
+
+.skills-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.skills-header h2 {
+    font-size: 24px;
+    font-weight: bold;
+    background: linear-gradient(to right, #ff7e5f, #5100ff);
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.skills-icon img {
+    width: 40px;
+    height: 40px;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skills-list span {
+    background-color: #f1f3f4;
+    border-radius: 12px;
+    padding: 12px 20px;
+    font-size: 16px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+    .skills-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-list {
+        grid-template-columns: 1fr;
+    }
+}
+
+footer{
+
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
